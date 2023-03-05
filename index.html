@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<! IMPORTANT to use a CSS file - external >
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>Questionnaire</title>
+	
+  </head>
+  
+  <body>
+	<header>	<h1>Survey</h1>	</header>
+	<form id="myform" action="index.php" >
+
+	<h2>What are your thoughts of the UI on this page? <a href="http://bestbuy.ca">Best Buy</a> site?</h2>	
+	<br>
+	<! You should make your image clickable>
+	<a href="http://bestbuy.ca">
+		<img src="images/bestbuyfrontpage.png" alt="http://bestbuy.ca" width="500" height="330">
+	</a>
+	<br>
+	<br>
+	
+		
+	</div>	
+	 <div class="question1">
+	<h2> How would you rate the user friendliness of the interface? </h2>
+	<input type = "radio" id = "Love it" name ="test">Love it<br>
+	<input type = "radio" id = "It's okay" name = "test" style="margin-left: 1.1em;">It's okay<br>
+	<input type = "radio" id = "Hate it" name = "test">Hate it<br>
+	<br>
+	<br>
+		
+	</div>	
+		
+	<div class="question2">
+		<h2 style="margin: -0.01em"> How difficult is it to read the characters on the screen? </h2>
+		It's:<br>
+		<input type="checkbox" name="Difficult" value ="Difficult">It's difficult to read<br>
+		<input type="checkbox" name="Okay" value ="Okay"style="margin-left:-1.4em;">It's okay to read<br>
+		<input type="checkbox" name="Great" value="Great"style="margin-left:6.67em;">I can read all of the characters<br>
+		
+		<br>
+		
+	<div class="question1">
+		<h2> Which of the items in the list below has affected your experience when browsing the website? </h2>
+		I like:<br>
+		<select id="favorite">
+
+		<option value="Search Bar" selected="selected">Search Bar</option>
+		<option value="Categories">Categories</option>
+		<option value="Deals Carousel">Deals Carousel</option>
+		</select>
+		<br>
+		<br>
+	</div class="question4" >
+		<h2 style="margin: -0.4em">How often do you use the website?</h2><br>
+		<select id="favorite">
+			<option value="Daily" selected="selected">Daily</option>
+			<option value="Weekly">Weekly</option>
+			<option value="Monthly">Monthly</option>
+		</select>
+	</div>
+	
+	<br>
+	<br>
+
+	</div class="question1" >
+		<h2 style="margin: -0.4em">If you were to review the website, what score would you give out of 10?</h2><br>
+		<p>Rating: <input type="text" rate="rating"></p>
+	<br>
+	<br>
+
+	</div>
+
+	</div class="question6" >
+		<h2 style="margin: -0.4em">How easy is it to navigate through the website?</h2><br>
+		<p>Difficulty: <input type="text" difficult="difficulty"></p>
+	<br>
+	<br>
+
+	</div>
+		
+	Comments:<br>
+	<textarea placeholder="Please enter your feedback, we would like to hear from you.." rows="5" cols="70"></textarea>
+			
+	<br>
+	<br>
+			
+	<input type="submit" value="Submit">
+		
+	<p id="signature">Site created by Nujhat Fatima, Salma Mounan, Alara Oskan, Talya Vuruskaner.  </p>	
+	
+	</form>
+  </body>
+</html> 
