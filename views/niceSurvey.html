@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+  
+  </head>
+  
+  <div class="myDiv">
+  <h2>
+    Can you please answer this questions about this website
+    <a href="https://www.bestbuy.ca/fr-ca">Best Buy</a> website,<br>
+    please fill out this questionnaire.
+  </h2><br>
+  
+ 
+  
+  <body>
+      <form name="Form">
+        <div class="myDiv">
+          <h3> Can you give me your name : </h3>
+          Name: <input type="text" name="items" required><br>
+          <br>
+        <div class="myDiv">
+          <h3>Can you please choose your gender? </h3>
+          <select name="Gender"><br>
+            <option value="Male">Male</option><br>
+            <option value="Female">Female</option><br>
+            <option value="Other">Other</option><br>
+          </select><br>
+          <br>
+          
+        </div>
+        <div class="myDiv">
+          <h3>Is this website user-friendly?  </h3>
+          <input type="radio" name="yn" value="Yes">Yes<br>
+          <input type="radio" name="yn" value="No">No<br>
+          <br>
+        </div>
+        <div class="myDiv">
+          <h3>What's the best feature that this website is providing? </h3>
+          <input type="checkbox" name="characteristic" value="Easy Navigation">Easy Navigation<br>
+          <input type="checkbox" name="characteristic" value="Good Product Selection">Good Product Selection<br>
+          <input type="checkbox" name="characteristic" value="Easy Checkout">Easy Checkout<br>
+          <input type="checkbox" name="characteristic" value="Good customer service">Good customer service<br>
+          <br>
+        <div class="myDiv">
+          <h3>What do you think we should improve for the UI of this site? </h3>
+          <input type="checkbox" name="characteristic" value="Proper Functionality">Proper Functionality<br>
+          <input type="checkbox" name="characteristic" value="Speed">Speed<br>
+          <input type="checkbox" name="characteristic" value="Efficiency">Efficiency<br>
+          <input type="checkbox" name="characteristic" value="Security">Security<br>
+          <br>
+        </div>
+       
+  
+        <div class="myDiv">
+          <h3>The uOttawa website is easy to navigate:</h3>
+          Strongly Disagree<input type="radio" name="navigation" value="Strongly Disagree">
+          <input type="radio" name="navigation" value="Disagree">
+          <input type="radio" name="navigation" value="Neutral">
+          <input type="radio" name="navigation" value="Agree">
+          <input type="radio" name="navigation" value="Strongly Agree">Strongly Agree<br>
+          <br>
+        </div>
+        <div class="myDiv">
+          <h3>Do you have any comments </h3>
+          <textarea name="comments" white-space="pre-wrap" rows="10" cols="30"/></textarea><br>
+          <br>
+        </div>
+        <div class="myDiv">
+          <br>
+          <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+        </div>
+      </form>
+      <footer>
+
+      </footer>
+      <script src="/assets/action.js"></script>
+  </body>
+  </html>
