@@ -11,85 +11,183 @@
   </head>
   
   <body>
-	<header>	<h1>Survey</h1>	</header>
-	<form id="myform" action="index.php" >
-
-	<h2>What are your thoughts of the UI on this page? <a href="http://bestbuy.ca">Best Buy</a> site?</h2>	
-	<br>
-	<! You should make your image clickable>
-	<a href="http://bestbuy.ca">
+    <div class="container">
+		<h1>BestBuy UI Analysis Survey</h1>
+		<a href="http://bestbuy.ca">
 		<img src="images/bestbuyfrontpage.png" alt="http://bestbuy.ca" width="500" height="330">
-	</a>
-	<br>
-	<br>
-	
-		
-	</div>	
-	 <div class="question1">
-	<h2> How would you rate the user friendliness of the interface? </h2>
-	<input type = "radio" id = "Love it" name ="test">Love it<br>
-	<input type = "radio" id = "It's okay" name = "test" style="margin-left: 1.1em;">It's okay<br>
-	<input type = "radio" id = "Hate it" name = "test">Hate it<br>
-	<br>
-	<br>
-		
-	</div>	
-		
-	<div class="question2">
-		<h2 style="margin: -0.01em"> How difficult is it to read the characters on the screen? </h2>
-		It's:<br>
-		<input type="checkbox" name="Difficult" value ="Difficult">It's difficult to read<br>
-		<input type="checkbox" name="Okay" value ="Okay"style="margin-left:-1.4em;">It's okay to read<br>
-		<input type="checkbox" name="Great" value="Great"style="margin-left:6.67em;">I can read all of the characters<br>
-		
-		<br>
-		
-	<div class="question1">
-		<h2> Which of the items in the list below has affected your experience when browsing the website? </h2>
-		I like:<br>
-		<select id="favorite">
-
-		<option value="Search Bar" selected="selected">Search Bar</option>
-		<option value="Categories">Categories</option>
-		<option value="Deals Carousel">Deals Carousel</option>
-		</select>
-		<br>
-		<br>
-	</div class="question4" >
-		<h2 style="margin: -0.4em">How often do you use the website?</h2><br>
-		<select id="favorite">
-			<option value="Daily" selected="selected">Daily</option>
-			<option value="Weekly">Weekly</option>
-			<option value="Monthly">Monthly</option>
-		</select>
-	</div>
-	
-	<br>
-	<br>
-
-	</div class="question1" >
-		<h2 style="margin: -0.4em">If you were to review the website, what score would you give out of 10?</h2><br>
-		<p>Rating: <input type="text" rate="rating"></p>
-	<br>
-	<br>
-
-	</div>
-
-	</div class="question6" >
-		<h2 style="margin: -0.4em">How easy is it to navigate through the website?</h2><br>
-		<p>Difficulty: <input type="text" difficult="difficulty"></p>
-	<br>
-	<br>
-
-	</div>
-		
-	Comments:<br>
-	<textarea placeholder="Please enter your feedback, we would like to hear from you.." rows="5" cols="70"></textarea>
+		</a>
+  
+	<form id="myform" action="index.php" >
+		<div class="caption center-block">
+		  Click the picture above to view BestBuy's website
+		</div>
+		<form class="needs-validation" novalidate id="form">
+		  <div class="form-group">
+			<label for="name" class="form-label">Full Name</label>
+			<input
+			  type="text"
+			  placeholder="Enter name..."
+			  class="form-control"
+			  required
+			/>
+		  </div>
+		  <div class="form-group">
+			<label for="name" class="form-label"
+			  >Describe the website in one word</label
+			>
+			<input
+			  type="text"
+			  placeholder="Enter word..."
+			  name="description"
+			  class="form-control"
+			  required
+			/>
 			
-	<br>
-	<br>
-			
-	<input type="submit" value="Submit">
+		  </div>
+		  <div class="form-group">
+			<label for="favouriteAspects" class="form-label"
+			  >Which of the items in the list below has affected your experience when browsing the website? 
+			  I like:<br></label
+			>
+			<div class="form-check">
+			  <input
+				type="checkbox"
+				name="favouriteAspects"
+				value="SearchBar"
+				class="form-check-input"
+			  />
+			  <label class="form-check-label" for="searchBar">Search Bar</label>
+			</div>
+			<div class="form-check">
+			  <input
+				type="checkbox"
+				name="favouriteAspects"
+				value="categories"
+				class="form-check-input"
+			  />
+			  <label class="form-check-label" for="categories"
+				>Categories</label
+			  >
+			</div>
+			</div>
+			<div class="form-check">
+			  <input
+				type="checkbox"
+				name="favouriteAspects"
+				value="DealsCarasoul"
+				class="form-check-input"
+			  />
+			  <label class="form-check-label" for="DealsCarasoul">Deals Carasoul</label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label class="form-label"
+			  >How would you rate the usability of the website?</label
+			>
+			<div class="form-check">
+			  <input
+				class="form-check-input"
+				checked
+				type="radio"
+				name="usability"
+				value="Poor"
+			  />
+			  <label class="form-check-label" for="poor"> Poor </label>
+			</div>
+			<div class="form-check">
+			  <input
+				class="form-check-input"
+				type="radio"
+				name="usability"
+				value="Satisfactory"
+			  />
+			  <label class="form-check-label" for="satisfactory">
+				Satisfactory
+			  </label>
+			</div>
+			<div class="form-check">
+			  <input
+				class="form-check-input"
+				type="radio"
+				name="usability"
+				value="Great"
+			  />
+			  <label class="form-check-label" for="great"> Great </label>
+			</div>
+			<div class="form-check">
+			  <input
+				class="form-check-input"
+				type="radio"
+				name="usability"
+				value="Excellent"
+			  />
+			  <label class="form-check-label" for="excellent"> Excellent </label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="design" class="form-label"
+			  >What do you like most about the website's design?</label
+			>
+			<select
+			  class="form-select"
+			  name="design"
+			  aria-label="Select what you liked most"
+			  required
+			>
+			  <option selected disabled value="">Choose...</option>
+			  <option value="Colours">Colours</option>
+			  <option value="Layout">Layout</option>
+			  <option value="Animation">Animation</option>
+			  <option value="Font">Font</option>
+			  <option value="Icons">Icons</option>
+			  <option value="Navigation">Navigation</option>
+			</select>
+			<small class="invalid-feedback"> Please select an option. </small>
+		  </div>
+		  <div class="form-group">
+			<label for="recommend" class="form-label"
+			  >How likely are you to recommend Shopify to your friends and
+			  family?</label
+			>
+			<input
+			  type="range"
+			  name="recommend"
+			  class="form-range"
+			  min="1"
+			  max="5"
+			/>
+			<div class="d-flex justify-content-between">
+			  <p>Not Likely</p>
+			  <p>Very Likely</p>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="feedback" class="form-label">Feedback and Comments</label>
+			<textarea
+			  class="form-control"
+			  rows="3"
+			  name="comment"
+			  placeholder="Enter comments..."
+			></textarea>
+		  </div>
+  
+		  <button
+			type="submit"
+			class="btn btn-success mx-auto d-block"
+			id="submitBtn"
+		  >
+			Submit
+		  </button>
+		</form>
+		<div
+		  id="confirmation"
+		  class="alert alert-success w-100"
+		  hidden
+		  role="alert"
+		></div>
+
+
+		
 		
 	<p id="signature">Site created by Nujhat Fatima, Salma Mounan, Alara Oskan, Talya Vuruskaner.  </p>	
 	
